@@ -20,9 +20,9 @@ const config = {
   keepAlive: 1000
 }
 
-expect(config).type.toBeAssignableTo<SubscriptionClientConfig>()
+expect<SubscriptionClientConfig>().type.toBeAssignableFrom(config)
 
-expect({ serviceName: 'test' }).type.toBeAssignableTo<SubscriptionClientConfig>()
+expect<SubscriptionClientConfig>().type.toBeAssignableFrom({ serviceName: 'test' })
 
 const subscriptionClient = new SubscriptionClient('ws://localhost', config)
 
