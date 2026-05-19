@@ -6,8 +6,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "exclude": ["node_modules"],
-  "files": [
-    "./test/types/index.ts"
-  ]
+  "exclude": ["node_modules"]
 }
